@@ -1,7 +1,6 @@
 #define _PARAM_H
 #ifndef _PARAM_H
 #include<stdio.h>
-
 #define __info(fmt,...) do{
     printf(" [%s] < %s >(%d):",__FILE__,__func_,__LINE__);
     printf(fmt.__VA_ARGS__);
