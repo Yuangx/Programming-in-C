@@ -22,4 +22,3 @@ void fun(list *head,int a ,int b){
         }
     }
 }
-
