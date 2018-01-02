@@ -18,7 +18,7 @@ void ClearPoly(Poly *p);				//释放一元多项式
 
 void main()
 {
-	Poly *pa,*pb,*p1,*p2,*p3; 
+	Poly *pa,*pb,*p1,*p2,*p3;
 	int n1,n2;
 
 	pa=(Poly *)malloc(sizeof(Poly));				//建立第一个一元多项式
@@ -46,7 +46,7 @@ void main()
 	AddPoly(p1,p2);
 	printf("\n两个一元多项式相加的结果为:\n");
 	OutputPoly(p1);
-	ClearPoly(p1);	
+	ClearPoly(p1);
 	ClearPoly(p2);
 
 	p1=(Poly *)malloc(sizeof(Poly));
@@ -55,7 +55,7 @@ void main()
 	p2->link=NULL;
 	CopyPoly(pa,p1);
 	CopyPoly(pb,p2);
-	p3=(Poly *)malloc(sizeof(Poly));			
+	p3=(Poly *)malloc(sizeof(Poly));
 	p3->link=NULL;
 
 	MutipliedPoly(p1,p2,p3);
@@ -207,4 +207,4 @@ void ClearPoly(Poly *p)
 }
 
 
-	
+
